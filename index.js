@@ -54,3 +54,11 @@ function makeSound(key) {
         default:
     }
 }
+
+function buttonAnimation(currentKey) {
+    let activeButton = document.querySelector("." + currentKey);
+    activeButton.classList.add("press");
+    setTimeout(function () {
+        activeButton.classList.remove("press");
+    }, 70);
+}
